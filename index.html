@@ -10,13 +10,14 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daraz by TEMPLATE STOCK</title>
+    <title>Synkronix_eg</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
 
 		<link rel="stylesheet" href="css/style.css" />
+    <link rel="website icon" type="png" href="images/blacklogo.png">
 
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -45,7 +46,12 @@
 
     <!-- MAIN CONTENT -->
 
-   <div class="container-fluid">
+    <!-- Loading Page -->
+    <div id="loading">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="container-fluid">
 
     <!-- HEADER -->
 
@@ -61,16 +67,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#header">Daraz</a>
+            <a class="navbar-brand" href="#header">Synkronix</a>
           </div><!-- /.navbar-header -->
 
           <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#header">Home</a></li>
-              <li><a href="#about">About</a></li>              
+              <li><a href="#about">About</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
-			  <li><a href="#team">Team</a></li>
-			  <li><a href="#info">Info</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#info">Info</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div> <!-- /.navbar-collapse -->
@@ -94,7 +100,7 @@
 
                     <div class="slider-content">
                       <h1></h1>
-                      <p>We are a creative agency from the earth of Bandung, Indonesia</p>
+                      <p>We are a creative agency based in the heart of Egypt, delivering innovative digital solutions worldwide.</p>
                     </div>
 
                   </div> <!-- /.col-md-12 -->
@@ -137,18 +143,15 @@
         var dataHeader = [
                             {
                               bigImage :"images/slide-1.jpg",
-                              title : "Minimal & Clean",
-							  author : "Templatestock"
+                              title : "Elevate Your Business with Synkronix",
                             },
                             {
                               bigImage :"images/slide-2.jpg",
-                              title : "I'm A Creative Theme",
-                              author : "Templatestock"
+                              title : "Innovative Web & Mobile Solutions",
                             },
                             {
                               bigImage :"images/slide-3.jpg",
                               title : "Achieve Success",
-                              author : "Templatestock"
                             }
                         ],
             loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 600, speedOut : 600, easingIn : mina.easeinout});
@@ -166,14 +169,14 @@
     <section id="about" class="light">
       <header class="title">
         <h2>About <span>Us</span></h2>
-        <p>Lorem ipsum Esse esse cillum nisi cillum deserunt tempor ut pariatur qui officia. Lorem ipsum Magna eu irure sint <strong>occaecat</strong> cupidatat dolore minim irure cillum.</p>
+        <p>At Synkronix, we craft innovative digital solutions that blend creativity with technology. From <strong>web development to mobile applications, </strong> we bring ideas to life with precision and expertise.</p>
       </header>
 
       <div class="container">
         <div class="row table-row">
           <div class="col-sm-6 hidden-xs">
             <div class="section-content">
-              <div class="big-image" style="background-image:url(images/1.png)"></div>
+              <div class="big-image" style="background-image:url(images/mobile.png)"></div>
             </div>
           </div>
 
@@ -183,7 +186,7 @@
                 <div class="about-icon"><i class="fa fa-code"></i></div>
                 <div class="about-detail">
                   <h4>Clean Code</h4>
-                  <p>Lorem ipsum Ad nisi dolore ut sit do dolor commodo sint ullamco. Lorem ipsum Magna enim eu irure sit eiusmod fugiat et. Lorem ipsum Consequat in cupidatat cupidatat non in non veniam dolore.</p>
+                  <p>We prioritize structured, efficient, and scalable code to ensure high-performance solutions.</p>
                 </div>
               </div>
 
@@ -191,7 +194,7 @@
                 <div class="about-icon"><i class="fa fa-desktop"></i></div>
                 <div class="about-detail">
                   <h4>Fully Responsive</h4>
-                  <p>Lorem ipsum Ex labore dolor magna in proident ad reprehenderit consequat irure nostrud quis. Lorem ipsum Veniam velit non cupidatat nulla et proident.</p>
+                  <p>Our designs adapt seamlessly across all devices, delivering a smooth user experience everywhere.</p>
                 </div>
               </div>
 
@@ -199,7 +202,7 @@
                 <div class="about-icon"><i class="fa fa-cube"></i></div>
                 <div class="about-detail">
                   <h4>Multipurpose Design</h4>
-                  <p>Lorem ipsum Ea quis sint sint aliquip qui exercitation commodo non cupidatat do reprehenderit dolor. Lorem ipsum Non et minim incididunt sed labore in amet ea est pariatur.</p>
+                  <p>We create versatile, dynamic designs that cater to various industries and business needs.</p>
                 </div>
               </div>
             </div>
@@ -214,17 +217,17 @@
     <section id="portfolio" class="light">
       <header class="title">
         <h2>Portfolio</h2>
-        <p>Lorem ipsum Cupidatat sit irure nostrud ut deserunt ad enim id laboris. Lorem ipsum Enim proident et eu et minim voluptate eiusmod ullamco commodo aliqua amet.</p>
+        <!-- <p>Lorem ipsum Cupidatat sit irure nostrud ut deserunt ad enim id laboris. Lorem ipsum Enim proident et eu et minim voluptate eiusmod ullamco commodo aliqua amet.</p> -->
       </header>
 
       <div class="container-fluid">
         <div class="row">
           <ul id="filters" class="list-inline">
             <li data-filter="all" class="filter">All</li>
-            <li data-filter=".branding" class="filter">Branding</li> 
-            <li data-filter=".graphic" class="filter">Graphic</li> 
-            <li data-filter=".printing" class="filter">Printing</li> 
-            <li data-filter=".video" class="filter">Video</li> 
+            <li data-filter=".branding" class="filter">Branding</li>
+            <li data-filter=".graphic" class="filter">Graphic</li>
+            <li data-filter=".printing" class="filter">Printing</li>
+            <li data-filter=".video" class="filter">Video</li>
           </ul>
         </div>
 
@@ -235,31 +238,31 @@
             var portfolio = [
                     {
                       category : "branding",
-                      image : "images/p-1.png",
-                      title : "Charming <span>Roxy</span>",
-                      link : "#none",
-                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
+                      image : "images/habib.png",
+                      title : "<span>TOP H</span>",
+                      link : "https://habib-alameldin.com/?i=1",
+                      text : "Automative Filmmaker | Videography"
                     },
                     {
                       category : "graphic",
-                      image : "images/p-2.png",
-                      title : "Fresh <span>Bubba</span>",
-                      link : "#none",
-                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
+                      image : "images/CADI.png",
+                      title : "<span>CADI</span>",
+                      link : "https://cadi.great-site.net/?i=1",
+                      text : "A Technology Devices Website (CADI) is a platform that offers information, reviews, and resources related toelectronic devices such as computers,smartphones, laptops, and othertechnology gadgets."
                     },
                     {
                       category : "graphic",
-                      image : "images/p-3.png",
-                      title : "Wild <span>Romeo</span>",
+                      image : "images/Categories.png",
+                      title : "Smart <span>Home Application</span>",
                       link : "#none",
-                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
+                      text : " it is an application we use it to access and receive all data about the smart home system. "
                     },
                     {
                       category : "video",
-                      image : "images/p-4.png",
-                      title : "Strange <span>Dexter</span>",
+                      image : "images/Wagbat.png",
+                      title : "<span>Wagbat</span>",
                       link : "#none",
-                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
+                      text : "It is a mobile application that provides food services at New Cairo Technological University"
                     },
                     {
                       category : "branding",
@@ -301,53 +304,31 @@
 
     <section id="team" class="light">
       <header class="title">
-        <h2>Creative <span>Team</span></h2>
-        <p>Lorem ipsum Dolor et reprehenderit laborum deserunt aliquip incididunt tempor id non. Lorem ipsum Fugiat anim labore cupidatat consequat non in sit dolore anim anim consequat nisi.</p>
-      </header>
+        <h2>Meet Our <span>Creative Team</span></h2>
+        <p>Driven by passion and innovation, our team brings ideas to life with expertise in design, development, and strategy. Together, we craft outstanding digital experiences.</p>
+    </header>
       
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6 text-center">
-            <div class="wrap animated" data-animate="fadeInDown">
-              <div class="img-team">
-                <img src="images/team-1.png" alt="" class="img-circle">
-              </div>
-
-              <h3>John Doe</h3>
-              <h5>Creative Director</h5>
-
-              <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
-
-              <div class="team-social">
-                <ul class="list-inline social-list">
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-google-plus"></a></li>
-                </ul> 
-              </div>                
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 text-center">
             <div class="wrap animated" data-animate="fadeInDown"> 
               <div class="img-team">
-                <img src="images/team-2.png" alt="" class="img-circle">
+                <img src="images/Me-1.jpg" alt="" class="img-circle">
               </div>
 
-              <h3>Ellie Morgan</h3>
-              <h5>Designer</h5>
+              <h3>Mohammed Ahmed Ali</h3>
+              <h5>FRONT-END & CROSS-PLATFORM DEVELOPER </h5>
 
-              <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
+              <p>2 years in web development, 1 year in cross-platform apps—crafting responsive, high-performance digital experiences.</p>
 
               <div class="team-social">
                 <ul class="list-inline social-list">
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                  <li><a href="https://www.instagram.com/mahamed_ahmed_x?igsh=M29samN0ODZoOTZp" class="fa fa-instagram"></a></li>
+                  <li><a href="https://www.linkedin.com/in/mohamed-ahmed-7b4669251" class="fa fa-linkedin"></a></li>
+                  <li><a href="https://www.facebook.com/mahamed1ahmed?mibextid=wwXIfr&mibextid=wwXIfr" class="fa fa-facebook"></a></li>
+                  <li><a href="mailto:mohammed.a.ali3723@gmail.com" class="fa fa-google"></a></li>
                 </ul> 
-              </div>                
+              </div>
             </div>
           </div>
 
@@ -492,7 +473,7 @@
      <section id="contact" class="dark">
       <header class="title">
         <h2>Contact <span>Us</span></h2>
-        <p>Lorem ipsum Esse esse cillum nisi cillum deserunt tempor ut pariatur qui officia. Lorem ipsum Magna eu irure sint occaecat cupidatat dolore minim irure cillum.</p>
+        <p>Have a project in mind? Let's build something amazing together!</p>
       </header>
 
       <div class="container">
@@ -518,10 +499,10 @@
 
           <div class="col-md-4 animated" data-animate="fadeInRight">
             <address>
-                <span><i class="fa fa-map-marker fa-lg"></i> 84 State Road 123 City, State 24813</span>
-                <span><i class="fa fa-phone fa-lg"></i> (123) xxx - xxx</span>
-                <span><i class="fa fa-envelope-o fa-lg"></i> <a href="mailto:contact@example.com">contact&#64;example.com</a></span>
-                <span><i class="fa fa-globe fa-lg"></i> <a href="http://support.example.com">support.example.com</a></span>
+                <span><i class="fa fa-map-marker fa-lg"></i> Third Settlement, New Cairo</span>
+                <span><i class="fa fa-phone fa-lg"></i> +20 1099341054</span>
+                <span><i class="fa fa-envelope-o fa-lg"></i> <a href="mailto:synkronix321@gmail.com">synkronix321@gmail.com</a></span>
+                <span><i class="fa fa-globe fa-lg"></i> <a href="http://support.example.com">Synkronix_eg.com</a></span>
             </address>
           </div>
 		  
@@ -531,14 +512,16 @@
 
     <section id="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>Made BY <i class="fa fa-heart"></i> <a href="http://templatestock.co">Template Stock</a></p>
-            <p><small>Images : unsplash.com</small></p>
+          <div class="row">
+              <div class="col-md-12 text-center">
+                  <p>Crafted with <i class="fa fa-heart"></i> by <strong>Synkronix</strong></p>
+                  <p>Empowering innovation through web & cross-platform development.</p>
+                  <p><small>© 2025 Synkronix. All Rights Reserved.</small></p>
+              </div>
           </div>
-        </div>
       </div>
-    </section>
+  </section>
+  
 
    </div><!-- /.container-fluid -->
     
