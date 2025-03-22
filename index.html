@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-<!--
-	Daraz by TEMPLATE STOCK
-	templatestock.co @templatestock
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
-
 <html lang="en">
 	<head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Synkronix_eg</title>
+    <title>Synkronix EG</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
@@ -23,14 +17,6 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZXJBVDf7R4JqmSpopVPoduIGWx1IwpBM"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
-
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 	</head>
 	<body>
 	<div class="svg-wrap">
@@ -42,21 +28,16 @@
         <path id="arrow-right" d="M37.333 10.667q1.125 0 1.896 0.771l18.667 18.667q0.771 0.771 0.771 1.896t-0.771 1.896l-18.667 18.667q-0.771 0.771-1.896 0.771-1.146 0-1.906-0.76t-0.76-1.906q0-1.125 0.771-1.896l14.125-14.104h-41.563q-1.104 0-1.885-0.781t-0.781-1.885 0.781-1.885 1.885-0.781h41.563l-14.125-14.104q-0.771-0.771-0.771-1.896 0-1.146 0.76-1.906t1.906-0.76z"></path>
       </svg>
     </div>
-
-
     <!-- MAIN CONTENT -->
-
     <!-- Loading Page -->
     <div id="loading">
       <div class="spinner"></div>
     </div>
-
     <div class="container-fluid">
 
-    <!-- HEADER -->
-
+    <!-- HEADER 
+    =========== -->
     <section id="header">
-
       <!-- NAVIGATION -->
       <nav class="navbar navbar-fixed-top navbar-default bottom">
         <div class="container">
@@ -82,6 +63,7 @@
           </div> <!-- /.navbar-collapse -->
         </div> <!-- /.container -->
       </nav>
+      <!-- NAVIGATION -->
 
       <!-- SLIDER -->
       <div class="header-slide">
@@ -157,15 +139,14 @@
             loaderSVG = new SVGLoader(document.getElementById('loader'), {speedIn : 600, speedOut : 600, easingIn : mina.easeinout});
             loaderSVG.show()
         </script>
-
-      </div><!-- /.header-slide -->
+      </div>
+      <!-- header-slide -->
     </section>
+    <!-- HEADER 
+    =========== -->
 
-    <!-- HEADER END -->
-
-
-    <!-- ABOUT -->
-
+    <!-- ABOUT 
+    ========== -->
     <section id="about" class="light">
       <header class="title">
         <h2>About <span>Us</span></h2>
@@ -210,24 +191,21 @@
         </div> <!-- /.row table-row -->
       </div> <!-- /.container -->
     </section>
+    <!-- ABOUT 
+    ========== -->
 	
-	
-	    <!-- PORTFOLIO -->
-
+	  <!-- PORTFOLIO 
+    ============== -->
     <section id="portfolio" class="light">
       <header class="title">
         <h2>Portfolio</h2>
-        <!-- <p>Lorem ipsum Cupidatat sit irure nostrud ut deserunt ad enim id laboris. Lorem ipsum Enim proident et eu et minim voluptate eiusmod ullamco commodo aliqua amet.</p> -->
       </header>
-
       <div class="container-fluid">
         <div class="row">
           <ul id="filters" class="list-inline">
             <li data-filter="all" class="filter">All</li>
-            <li data-filter=".branding" class="filter">Branding</li>
-            <li data-filter=".graphic" class="filter">Graphic</li>
-            <li data-filter=".printing" class="filter">Printing</li>
-            <li data-filter=".video" class="filter">Video</li>
+            <li data-filter=".Website" class="filter">Websites</li>
+            <li data-filter=".Mobile-App" class="filter">Mobile Application</li>
           </ul>
         </div>
 
@@ -237,60 +215,40 @@
             <script type="text/javascript">
             var portfolio = [
                     {
-                      category : "branding",
+                      category : "Website",
+                      image : "images/CADI.png",
+                      title : "<span>CADI</span>",
+                      link : "https://cadi.great-site.net",
+                      text : "A Technology Devices Website (CADI) is a platform that offers information, reviews, and resources related toelectronic devices such as computers,smartphones, laptops, and othertechnology gadgets."
+                    },
+                    {
+                      category : "Website",
+                      image : "images/Geniuses-Platform.png",
+                      title : "<span>Geniuses Platform</span>",
+                      link : "https://geniuses-platform.wuaze.com",
+                      text : "Educational Competitional Platform"
+                    },
+                    {
+                      category : "Website",
                       image : "images/habib.png",
                       title : "<span>TOP H</span>",
                       link : "https://habib-alameldin.com/?i=1",
                       text : "Automative Filmmaker | Videography"
                     },
+                    
                     {
-                      category : "graphic",
-                      image : "images/CADI.png",
-                      title : "<span>CADI</span>",
-                      link : "https://cadi.great-site.net/?i=1",
-                      text : "A Technology Devices Website (CADI) is a platform that offers information, reviews, and resources related toelectronic devices such as computers,smartphones, laptops, and othertechnology gadgets."
-                    },
-                    {
-                      category : "graphic",
+                      category : "Mobile-App",
                       image : "images/Categories.png",
                       title : "Smart <span>Home Application</span>",
                       link : "#none",
-                      text : " it is an application we use it to access and receive all data about the smart home system. "
+                      text : " It is an application we use it to access and receive all data about the smart home system. "
                     },
                     {
-                      category : "video",
+                      category : "Mobile-App",
                       image : "images/Wagbat.png",
                       title : "<span>Wagbat</span>",
                       link : "#none",
                       text : "It is a mobile application that provides food services at New Cairo Technological University"
-                    },
-                    {
-                      category : "branding",
-                      image : "images/p-5.png",
-                      title : "Free <span>Sarah</span>",
-                      link : "#none",
-                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
-                    },
-                    {
-                      category : "printing",
-                      image : "images/p-6.png",
-                      title : "Chico <span>Silly</span>",
-                      link : "#none",
-                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
-                    },
-                    {
-                      category : "printing",
-                      image : "images/p-7.png",
-                      title : "IG <span>Shop</span>",
-                      link : "#none",
-                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
-                    },
-                    {
-                      category : "printing",
-                      image : "images/p-8.png",
-                      title : "Tana <span>Samawa</span>",
-                      link : "#none",
-                      text : "Lorem ipsum Dolor in minim fugiat ut nisi occaecat fugiat. Lorem ipsum Quis tempor Ut enim officia deserunt consectetur."
                     }
                 ];
             </script>
@@ -298,89 +256,106 @@
         </div>
       </div>
     </section>
+    <!-- PORTFOLIO 
+    ============== -->
 
-
-    <!-- TEAM -->
-
+    <!-- TEAM
+     ======== -->
     <section id="team" class="light">
       <header class="title">
         <h2>Meet Our <span>Creative Team</span></h2>
         <p>Driven by passion and innovation, our team brings ideas to life with expertise in design, development, and strategy. Together, we craft outstanding digital experiences.</p>
-    </header>
-      
+      </header>
       <div class="container">
         <div class="row">
+
+          <!-- Mohamed Ahmed Ali 
+           =====================-->
           <div class="col-md-3 col-sm-6 text-center">
             <div class="wrap animated" data-animate="fadeInDown"> 
               <div class="img-team">
-                <img src="images/Me-1.jpg" alt="" class="img-circle">
+                <img src="images/Mohammed-Ahmed-Ali.jpg" alt="" class="img-circle">
               </div>
 
-              <h3>Mohammed Ahmed Ali</h3>
+              <h3>Mohammed Ahmed</h3>
               <h5>FRONT-END & CROSS-PLATFORM DEVELOPER </h5>
 
               <p>2 years in web development, 1 year in cross-platform apps—crafting responsive, high-performance digital experiences.</p>
 
               <div class="team-social">
                 <ul class="list-inline social-list">
-                  <li><a href="https://www.instagram.com/mahamed_ahmed_x?igsh=M29samN0ODZoOTZp" class="fa fa-instagram"></a></li>
-                  <li><a href="https://www.linkedin.com/in/mohamed-ahmed-7b4669251" class="fa fa-linkedin"></a></li>
-                  <li><a href="https://www.facebook.com/mahamed1ahmed?mibextid=wwXIfr&mibextid=wwXIfr" class="fa fa-facebook"></a></li>
-                  <li><a href="mailto:mohammed.a.ali3723@gmail.com" class="fa fa-google"></a></li>
+                  <li><a href="" target="_blank" class="fa fa-github"></a></li>
+                  <li><a href="https://www.linkedin.com/in/mohamed-ahmed-7b4669251" target="_blank" class="fa fa-linkedin"></a></li>
+                  <li><a href="https://www.facebook.com/mahamed1ahmed?mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="fa fa-facebook"></a></li>
+                  <li><a href="https://www.instagram.com/mahamed_ahmed_x?igsh=M29samN0ODZoOTZp" target="_blank" class="fa fa-instagram"></a></li>
                 </ul> 
               </div>
             </div>
           </div>
+          <!-- Mohamed Ahmed Ali 
+           =====================-->
 
+          <!-- Mahmoud Gamal Abd-Elbar 
+           =====================-->
           <div class="col-md-3 col-sm-6 text-center">
             <div class="wrap animated" data-animate="fadeInDown"> 
               <div class="img-team">
-                <img src="images/team-3.png" alt="" class="img-circle">
+                <img src="images/Mahmoud-Gamal-Abd-Elbar.jpg" alt="" class="img-circle">
               </div>
 
-              <h3>Elche</h3>
+              <h3>Mahmoud Gamal</h3>
+              <h5>Back End and Front secondary Developer</h5>
+              <p>
+                1 years in Backend web development and Server Side Scripting, 
+                1 year in Frontend.
+              </p>
+              <div class="team-social">
+                <ul class="list-inline social-list">
+                  <li><a href="https://github.com/Mahmoud-G4" target="_blank" class="fa fa-github"></a></li>
+                  <li><a href="linkedin.com/in/mahmoud-gamal-976135241" target="_blank" class="fa fa-linkedin"></a></li>
+                  <li><a href="https://www.facebook.com/profile.php?id=61574065847007" target="_blank" class="fa fa-facebook"></a></li>
+                  <li><a href="https://www.instagram.com/mahmoud.g.4?igsh=N2V4bXR5OGhzNmtv" target="_blank" class="fa fa-instagram"></a></li>
+                </ul>
+              </div>                
+            </div>
+          </div>
+          <!-- Mahmoud Gamal Abd-Elbar 
+           =====================-->
+
+          <!-- Mahmoud Tariq (dont know how you write it ¯\_(ツ)_/¯ ) Khamis
+           =====================-->
+          <div class="col-md-3 col-sm-6 text-center">
+            <div class="wrap animated" data-animate="fadeInDown"> 
+              <div class="img-team">
+                <img src="images/Mahmoud-Tarik-Khamis.jpg" alt="" class="img-circle">
+              </div>
+
+              <h3>Mahmoud Tariq <!--(yea still dont know how)--> Khamis</h3>
               <h5>Developer</h5>
 
               <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
 
               <div class="team-social">
                 <ul class="list-inline social-list">
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-google-plus"></a></li>
+                  <li><a href="mailto:mohammed.a.ali3723@gmail.com" target="_blank" class="fa fa-github"></a></li>
+                  <li><a href="https://www.linkedin.com/in/mohamed-ahmed-7b4669251" target="_blank" class="fa fa-linkedin"></a></li>
+                  <li><a href="https://www.facebook.com/mahamed1ahmed?mibextid=wwXIfr&mibextid=wwXIfr" target="_blank" class="fa fa-facebook"></a></li>
+                  <li><a href="https://www.instagram.com/mahamed_ahmed_x?igsh=M29samN0ODZoOTZp" target="_blank" class="fa fa-instagram"></a></li>
                 </ul> 
               </div>                
             </div>
           </div>
+          <!-- Mahmoud Tariq (heyy...guess what) Khamis
+           =====================-->
 
-          <div class="col-md-3 col-sm-6 text-center">
-            <div class="wrap animated" data-animate="fadeInDown"> 
-              <div class="img-team">
-                <img src="images/team-4.png" alt="" class="img-circle">
-              </div>
-
-              <h3>JF Thiago</h3>
-              <h5>Commerce</h5>
-
-              <p>Lorem ipsum Proident incididunt sint dolor cupidatat pariatur dolore magna pariatur in ea aliqua.</p>
-
-              <div class="team-social">
-                <ul class="list-inline social-list">
-                  <li><a href="#" class="fa fa-twitter"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                  <li><a href="#" class="fa fa-facebook"></a></li>
-                  <li><a href="#" class="fa fa-google-plus"></a></li>
-                </ul> 
-              </div>                
-            </div>
-          </div>
         </div>
       </div> <!-- /.container -->
     </section>
-	
-	    <!-- INFO -->
+    <!-- TEAM
+    ======== -->
 
+	  <!-- INFO 
+    ========= -->
     <section id="info" class="dark">
       <header class="title">
         <h2>Our <span>Experties</span></h2>
@@ -410,32 +385,24 @@
           </div>
         </div>
       </div> <!-- /.container -->
-    </section>	
-	
+    </section>
+    <!-- INFO 
+    ========= -->	
 
+    <!-- Our work Statistics 
+    ======================== -->
     <section class="separator blue">
       <div class="container">
-        <div class="row">
+        <div class="row" style="display: flex; justify-content: space-evenly;">
+
           <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="counter animated" data-animate="fadeInUp" data-delay="0">
               <div class="counter-icon">
                 <i class="fa fa-group"></i>
               </div>
               <div class="counter-content">
-                <span class="value" data-from="0" data-to="43"></span>
+                <span class="value" data-from="0" data-to="5"></span>
                 <small>Clients</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="counter animated" data-animate="fadeInUp" data-delay="500">
-              <div class="counter-icon">
-                <i class="fa fa-leaf"></i>
-              </div>
-              <div class="counter-content">
-                <span class="value" data-from="0" data-to="20"></span>
-                <small>Awards</small>
               </div>
             </div>
           </div>
@@ -446,31 +413,21 @@
                 <i class="fa fa-gears"></i>
               </div>
               <div class="counter-content">
-                <span class="value" data-from="0" data-to="34"></span>
+                <span class="value" data-from="0" data-to="5"></span>
                 <small>Projects</small>
               </div>
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-6">
-            <div class="counter animated" data-animate="fadeInUp" data-delay="1500">
-              <div class="counter-icon">
-                <i class="fa fa-inbox"></i>
-              </div>
-              <div class="counter-content">
-                <span class="value" data-from="0" data-to="1298"></span>
-                <small>Mail</small>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
+	  <!-- Our work Statistics
+    ======================== -->
 
-
-    <!-- FOOTER CONTACT -->
-
-     <section id="contact" class="dark">
+    <!-- FOOTER CONTACT
+    =================== -->
+    <section id="contact" class="dark">
       <header class="title">
         <h2>Contact <span>Us</span></h2>
         <p>Have a project in mind? Let's build something amazing together!</p>
@@ -509,7 +466,11 @@
         </div>
       </div>
     </section>
+        <!-- FOOTER CONTACT
+    =================== -->
 
+    <!-- We should Remove this
+    =================== -->
     <section id="footer">
       <div class="container">
           <div class="row">
@@ -520,11 +481,12 @@
               </div>
           </div>
       </div>
-  </section>
-  
+    </section>
+    <!-- yea we should
+    =================== -->
+   </div>
+   <!-- /.container-fluid -->
 
-   </div><!-- /.container-fluid -->
-    
     <!-- SCRIPT -->
     <script type="text/javascript" src="js/main.js"></script>
 	</body>
