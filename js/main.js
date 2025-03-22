@@ -2,9 +2,7 @@ var SliderStatus = true;
 
 // Navigation
 (function($){
-
 	"use strict"
-
 	$(window).on("scroll", function(){
 		var navBar = $(".navbar-fixed-top"),
 			windowHeight = $(this).innerHeight()-navBar.innerHeight();
@@ -25,16 +23,13 @@ var SliderStatus = true;
 document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
         document.getElementById("loading").style.display = "none";
-        document.getElementById("content").style.display = "block";
     }, 1000); // Adjust time as needed
 });
 
 
 // Header Slider
 (function($){
-
 	"use strict"
-
 	var aPrev = $(".nav-slide a.prev"),
 		aNext = $(".nav-slide a.next"),
 		NextTitle = $(".nav-slide a.next h3"),
@@ -57,10 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		loader(true);
 	});
 
+	// Timer For how much each slide stays for
 	function SliderInterval(){
 		SliderTimeout = setInterval(function(){
 			if(SliderStatus) loader(true);
-		}, 8000);
+		}, 5000);
 	}
 
 	function startImageHeader(){
@@ -93,11 +89,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		            	nextImg = (errors[i] === nextImg) ? brokenImage : nextImg;
 		            }
 		        }
-		        
+		        // Timer for the Transition of the slides
 		        setTimeout(function(){
 		        	loaderSVG.hide();
 		        	SliderInterval();
-		        }, 2000);
+		        }, 10);
 
 		        activeSlide.css("background-image", "url('" + activeImg + "')");
 			
@@ -136,10 +132,11 @@ document.addEventListener("DOMContentLoaded", function () {
 				break;
 			}
 		}
-
+		
+		// this one Affeacts the transition of the slide too
 		setTimeout(function(){
 			startImageHeader();
-		}, 800);	
+		}, 650);	
 	}
 
 	startImageHeader();
@@ -149,10 +146,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // TEMPLATE
 (function($){
+	
 	$(document).on("ready", function(){
 		"use strict"
-		
-
 		//Header fit screen
 
 	    $(function() {
@@ -225,7 +221,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     // PORTFOLIO
-
     $(document).on("ready", function(){
     	"use strict"
 
@@ -285,157 +280,5 @@ document.addEventListener("DOMContentLoaded", function () {
 	    	}
 	    });
     });
-
-
-    //Google map
-
-	$(document).on("ready", function() {
-
-		var map;
-
-		$(".btn-map").click(function() {
-			if($("#google_map").children() > 0)
-				$("#google_map").slideToggle(300, function(){
-					map.getCenter();
-				});
-			else
-				$("#google_map").slideToggle(300, initialize);
-        });
-
-		function initialize() {
-		    var mapOptions = {
-		        zoom: 17,
-		        center: new google.maps.LatLng(-6.86041, 107.590006),
-		        disableDefaultUI: true,
-		        scrollwheel: false,
-		        styles: [{
-		            "featureType": "water",
-		            "elementType": "geometry",
-		            "stylers": [{
-		                "color": "#000000"
-		            }, {
-		                "lightness": 17
-		            }]
-		        }, {
-		            "featureType": "landscape",
-		            "elementType": "geometry",
-		            "stylers": [{
-		                "color": "#000000"
-		            }, {
-		                "lightness": 20
-		            }]
-		        }, {
-		            "featureType": "road.highway",
-		            "elementType": "geometry.fill",
-		            "stylers": [{
-		                "color": "#000000"
-		            }, {
-		                "lightness": 17
-		            }]
-		        }, {
-		            "featureType": "road.highway",
-		            "elementType": "geometry.stroke",
-		            "stylers": [{
-		                "color": "#000000"
-		            }, {
-		                "lightness": 29
-		            }, {
-		                "weight": 0.2
-		            }]
-		        }, {
-		            "featureType": "road.arterial",
-		            "elementType": "geometry",
-		            "stylers": [{
-		                "color": "#000000"
-		            }, {
-		                "lightness": 18
-		            }]
-		        }, {
-		            "featureType": "road.local",
-		            "elementType": "geometry",
-		            "stylers": [{
-		                "color": "#000000"
-		            }, {
-		                "lightness": 16
-		            }]
-		        }, {
-		            "featureType": "poi",
-		            "elementType": "geometry",
-		            "stylers": [{
-		                "color": "#000000"
-		            }, {
-		                "lightness": 21
-		            }]
-		        }, {
-		            "elementType": "labels.text.stroke",
-		            "stylers": [{
-		                "visibility": "on"
-		            }, {
-		                "color": "#000000"
-		            }, {
-		                "lightness": 16
-		            }]
-		        }, {
-		            "elementType": "labels.text.fill",
-		            "stylers": [{
-		                "saturation": 36
-		            }, {
-		                "color": "#000000"
-		            }, {
-		                "lightness": 40
-		            }]
-		        }, {
-		            "elementType": "labels.icon",
-		            "stylers": [{
-		                "visibility": "off"
-		            }]
-		        }, {
-		            "featureType": "transit",
-		            "elementType": "geometry",
-		            "stylers": [{
-		                "color": "#000000"
-		            }, {
-		                "lightness": 19
-		            }]
-		        }, {
-		            "featureType": "administrative",
-		            "elementType": "geometry.fill",
-		            "stylers": [{
-		                "color": "#000000"
-		            }, {
-		                "lightness": 20
-		            }]
-		        }, {
-		            "featureType": "administrative",
-		            "elementType": "geometry.stroke",
-		            "stylers": [{
-		                "color": "#000000"
-		            }, {
-		                "lightness": 17
-		            }, {
-		                "weight": 1.2
-		            }]
-		        }]
-		    };
-
-		    map = new google.maps.Map(document.getElementById('google_map'), mapOptions);
-
-		    var contentString = "<div class='map-tooltip'><h2>Manja<span>real</span></h2></div>";
-
-		    var infowindow = new google.maps.InfoWindow({
-		    	content: contentString
-		    });
-
-			var marker = new google.maps.Marker({
-				position: new google.maps.LatLng(-6.86041, 107.590006),
-				map: map,
-				icon : "images/map-pin.png"
-			});
-
-			google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map,marker);
-			});
-		}
-	});
 
 })(jQuery);
